@@ -8,16 +8,15 @@
     grid-template-rows: 10% 75% 15%;
 }
 
+
 header{
     color: white;
-    grid-row: 1/2;
-    width:100%;
+    width: 100%;
     display: flex;
+    justify-content: center;
     background-color: #451C67;
     flex-direction: row-reverse;
     z-index: 2;
-    box-shadow:1px 5px 1px 1px rgba(0, 0, 0, 0.5);
-    
 }
 
 button{
@@ -30,12 +29,12 @@ button{
 
 
 nav{
+    
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     margin: 2rem;
     margin-bottom: 1rem;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 a{
     text-decoration: none;
@@ -48,8 +47,6 @@ a{
     padding: 1rem;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content:  space-around;
     border-radius: 10px;
     background-color: #E0a814
 }
@@ -57,7 +54,7 @@ a{
 .menuitem:hover{
     transition: 400ms;
     background-color:#B70772;
-    font-size: 125%;
+    font-size: 100%;
     font-weight: bold;
 }
 
@@ -96,7 +93,7 @@ a{
     width: 100%;
     font-size: larger;
     font-weight: 500;
-}
+} 
 
 .donatebutton{
     color: white;
@@ -142,7 +139,10 @@ footer{
     margin-left: 1rem;
 }
 
+
 @media screen and (min-width: 800px){
+
+
     .image{
         width: 60%;
     }
@@ -155,5 +155,7 @@ footer{
         transition: 400ms;
         font-size: 160%;
     }
+
+
 
 }
