@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-rows: 10% 75% 15%;
+}
+
+header{
+    color: white;
+    grid-row: 1/2;
+    width:100%;
+    display: flex;
+    background-color: #451C67;
+    flex-direction: row-reverse;
+    z-index: 2;
+    box-shadow:1px 5px 1px 1px rgba(0, 0, 0, 0.5);
+    
+}
+
+button{
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: 1px  1px 1px 1px rgb(0, 0, 0, 0.1);
+}
+    
+
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 2rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    margin: 1rem;
+}
+
+
+.menuitem{
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:  space-around;
+    border-radius: 10px;
+    background-color: #E0a814
+}
+
+.menuitem:hover{
+    transition: 400ms;
+    background-color:#B70772;
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.menuitem:focus{
+    transition: 400ms;
+    background-color:#B70772;
+    font-size: 125%;
+    font-weight: bold;
+}
+
+
+.contentArea{
+    grid-row: 2/3;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    background-color: #E0a814;
+}
+
+.image{
+    display: flex;
+    width: 100%;
+    align-self: center;
+}
+
+
+.imgclass{
+    width: 100%;
+}
+
+.descriptionText{
+    color:#451C67;
+    margin-top: 2rem;
+    width: 100%;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.donatebutton{
+    color: white;
+    margin-top: 3rem;
+    padding: 1rem;
+    width: 20rem;
+    display: flex;
+    font-size: larger;
+    align-items: center;
+    justify-content:  space-around;
+    border-radius: 10px;
+    background-color: #B70772;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.4);   
+}
+
+.donatebutton:hover {
+    transition: 400ms ease;
+    font-size: 140%;
+    font-weight: bold;
+    
+}
+
+.donatebutton:focus{
+    transition: 400ms ease;
+    font-size: 140%;
+    font-weight: bold;
+    
+}
+
+
+  
+
+
+footer{
+    grid-row: 3/4;
+    background-color: #451C67;
+    justify-content: center;
+}
+
+.footertext{
+    padding: 1rem;
+    color: white;
+    margin-left: 1rem;
+}
+
+@media screen and (min-width: 800px){
+    .image{
+        width: 60%;
+    }
+
+    .donatebutton{
+        width: 40rem;
+    }
+
+    .donatebutton:hover{
+        transition: 400ms;
+        font-size: 160%;
+    }
+
+}
