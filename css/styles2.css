@@ -4,37 +4,14 @@
 .gridlayout {
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 200px 100px 1250px 200px;
-}
-
-.logo {
-    background-color:white;
-    grid-column: 1/1;
-    grid-row: 1/2;
-    display: flex;
-    justify-content: center;
-}
-
-.image {
-    transition: transform 500ms;
-    padding: 1rem;
-}
-
-.image:hover {
-    transform: scale(1.05);
-    color: black; 
-}
-
-.image:focus {
-    transform: scale(1.05);
-    color: black; 
+    grid-template-rows: 100px 1250px 200px;
 }
 
 .headerbox {
     width: 100%;
     display: grid;
     grid-column: 1/1;
-    grid-row: 2/3;
+    grid-row: 1/2;
     background-color: #451C67;
     display: flex;
     justify-content: space-evenly;
@@ -69,7 +46,7 @@
 
 .formbox {
     background-color: #E0a814;
-    grid-row: 3/4;
+    grid-row: 2/3;
     grid-column: 1/1;
 }
 
@@ -136,7 +113,7 @@ input, label {
     background-color: #451C67;
     font-size: 18px;
     grid-column: 1/1;
-    grid-row: 4/5;
+    grid-row: 3/4;
     font-family: 'Poppins', sans-serif;
     color: white;
     padding: 2rem;
@@ -146,21 +123,13 @@ input, label {
     
     .gridlayout {
         display: grid;
-        grid-template-columns: 30vw 70vw;
+        grid-template-columns: 1fr;
         grid-template-rows: 200px 1250px 200px;
-    }
-
-    .logo {
-        background-color:#E0a814;
-        grid-column: 1/2;
-        grid-row: 1/2;
-        display: flex;
-        justify-content: center;
     }
     
     .headerbox {
         background-color:#E0a814;
-        grid-column: 2/3;
+        grid-column: 1/1;
         grid-row: 1/2;
         display: flex;
         flex-direction: row;
@@ -182,7 +151,7 @@ input, label {
     .formbox {
         background-color: #451C67;
         grid-row: 2/3;
-        grid-column: 1/3;
+        grid-column: 1/1;
         width: 80%;
         margin: auto;
         padding: 1rem;
